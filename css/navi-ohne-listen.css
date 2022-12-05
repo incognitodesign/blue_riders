@@ -1,0 +1,67 @@
+:root{
+  --primary-color: rgb(31, 96, 149);
+  --color-highlight-8: rgba(31, 96, 149, 0.8);
+  --alpha: 0.8;
+  --secondary-color: #c16868;
+  --radius-15: 15px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Jost', sans-serif;
+}
+
+.topnav a:hover {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.topnav a.active {
+  _background-color: #4CAF50;
+  color: var(--secondary-color);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.innen
+{
+	display:none;
+}
+
+.topnav:hover .innen
+{
+	display:block;
+}
+
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
